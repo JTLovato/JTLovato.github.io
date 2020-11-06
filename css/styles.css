@@ -1,0 +1,855 @@
+
+/*  Special Font */
+@font-face {
+    font-family: 'retromark';
+    src: url('fonts/retromark.woff2') format('woff2'),
+         url('fonts/retromark.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*    Aninmations    */
+
+
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+    } 
+} 
+
+
+/*    Top Navigation      */
+
+.redNav, .whiteNav {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    animation: fadeInAnimation ease 3s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+    transition: .5s;
+    justify-content: space-around;
+}
+.whiteNav {
+    background-color: #fff;
+}
+.redNav {
+    background-color: #e00000;
+}
+
+.redNav a {
+    color: white;
+}
+.whiteNav a {
+    color: #e00000;
+}
+
+.redNav a, .whiteNav a {
+    margin: 10px 0;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+.whiteNavAbout:hover, .whiteNavContact:hover {
+    border-bottom: solid 3px #e00000;
+    transition: .5s;
+}
+.redNavCode:hover, .redNavDesign:hover {
+    border-bottom: solid 3px #fff;
+    transition: .5s;
+}
+
+
+/*    Background hold */
+.hold {
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+/*     Background colors and dimensions for each side */
+
+.red {
+    background-color: #e00000;
+    width: 50%;
+    min-height: 100vh;
+    transition: 1s;
+}
+.white {
+    background-color: #fff;
+    width: 50%;
+    min-height: 100vh;
+}
+
+/* Greetings Page */
+
+.welcome {
+    position: relative;
+    left: 25%;
+    margin: 200px 0 400px;
+    width: 75%;
+    text-align: right;
+    padding-right: 10px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+
+}
+.greetings {
+    position: relative;
+    left: 0%;
+    margin: 200px 0 400px;
+    width: 75%;
+    margin-left: 10px;
+    color: #e00000;
+    font-family: 'retromark', cursive;
+}
+.welcome h1 {
+    font-size: 250%;
+}
+.greetings h1 {
+    font-size: 270%;
+}
+.welcome h1, .greetings h1 {
+    text-decoration: underline;
+}
+.welcome p {
+    color: #fff;
+    margin-right: -10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+.greetings p {
+    color: #e00000;
+    margin-left: -10px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: -3px;
+    font-weight: 600;
+}
+
+.welcome h1, .greetings h1 { 
+    animation: fadeInAnimation ease 3s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+} 
+.welcome p, .greetings p, .arrow { 
+    animation: fadeInAnimation ease 5s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+} 
+
+.arrow {
+    position: absolute;
+    top: 90%;
+    margin-left: 40%;
+    width: 20%;
+}
+
+.arrow img {
+    height: 50px;
+    width: 100%;
+}
+
+/*      Design And Code Section    */
+
+.redCnD, .whiteCnD {
+    padding: 300px 0;
+    transition: width 1s ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 0%;
+}
+
+.rotateRight {
+    transform: rotate(90deg);
+}
+.rotateLeft {
+    transform: rotate(270deg);
+}
+
+.design, .code {
+    width: 500px;
+    text-align: center;
+    font-size: 400%;
+}
+
+.design {
+    /* position: relative;
+    left: -100%;
+    top: 0%; */
+    color: #fff;
+    font-family: 'retromark', cursive;
+    font-size: 800%;
+}
+
+.code {
+    /* position: relative;
+    left: -100%;
+    top: 0%; */
+    color:  #e00000;
+    font-size: 600%;
+}
+
+/*     Design Section    */
+
+.hiddenRed {
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    left: 0%;
+    z-index: 4;
+    background-color: #e00000;
+    transition: .5s ease-out;
+}
+.hiddenRedFull {
+    width: 100%;
+    transition: .5s;
+}
+
+
+/*    Coding Section    */
+
+.hiddenWhite {
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    right: 0%;
+    z-index: 3;
+    background-color: #fff;
+    transition: .5s ease-out;
+    padding: 8px;
+}
+.hiddenWhiteFull {
+    width: 100%;
+    transition: .5s;
+}
+
+.codeHoldWhite {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    transition: .5s; 
+}
+.codeHoldWhite h1 {
+    width: 100%;
+    text-align: center;
+    color: #e00000;
+    font-family: 'retromark', cursive;
+    font-size: 300%;
+}
+
+.closeWhite {
+    background-color: #e00000;
+    color: #fff;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+}
+.closeWhite p {
+    margin-bottom: 0;
+    margin: 5px;
+}
+
+.siteCoverHonee, .siteCoverGoalie, .siteCoverBar, .siteCoverCover {
+    background-size: cover;
+    width: 150px;
+    height: 188px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.siteCoverHonee {
+    background-image: url(../img/redHoneeCover.jpg);
+}
+.siteCoverGoalie {
+    background-image: url(../img/redGoalieCover.jpg);
+}
+.siteCoverBar {
+    background-image: url(../img/redBarCover.jpg);
+}
+.siteCoverCover {
+    background-image: url(../img/redCoverCover.jpg);
+}
+
+.redOverlayCover, .redOverlayGoalie,  .redOverlayBar, .redOverlayHonee {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: red;
+    transition: .25s;
+}
+.redOverlayHonee:hover {
+    transition: .25s;
+    background-image: url(../img/honeeCover.jpg);
+}
+.redOverlayGoalie:hover {
+    transition: .25s;
+    background-image: url(../img/goalieCover.jpg);
+}
+.redOverlayBar:hover {
+    transition: .25s;
+    background-image: url(../img/barCover.jpg);
+}
+.redOverlayCover:hover {
+    transition: .25s;
+    background-image: url(../img/coverCover.jpg);
+}
+
+.siteHoldCover, .siteHoldBar, .siteHoldHonee, .siteHoldGoalie {
+     text-align: center;
+     color: #e00000;
+     font-family: 'Open Sans', sans-serif;
+     margin: 1px;
+}
+
+.siteHoldCover h3 {
+    margin-bottom: 30px;
+}
+
+/*      Design Section    */
+
+.hiddenRed {
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    right: 0%;
+    background-color: #e00000;
+    transition: .5s ease-out;
+
+}
+.hiddenRedFull {
+    width: 100%;
+    transition: .5s;
+}
+
+.designHoldRed {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    transition: .5s; 
+    background-color: #e00000;
+}
+
+.designHoldRed h1 {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-family: 'retromark', cursive;
+    font-size: 300%;
+}
+
+.closeRed {
+    background-color: #fff;
+    color: #e00000;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+.closeRed p {
+    margin-bottom: 0;
+    margin: 5px;
+}
+
+.designCoverHold {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 150px;
+}
+.designCoverHold h3 {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.designCover {
+    background-size: cover;
+    width: 150px;
+    height: 188px;
+    transition: .25s;
+}
+
+.sohiCoverWhite {
+    background-image: url(../img/sohiWhiteCover.jpg);
+}
+.patronCoverWhite {
+    background-image: url(../img/patronSaintWhiteCover.jpg);
+}
+.freedomCoverWhite {
+    background-image: url(../img/freedomWhiteCover.jpg);
+}
+.ticketsCoverWhite {
+    background-image: url(../img/prideWhiteCover.jpg);
+}
+.spaceCoverWhite {
+    background-image: url(../img/bryzWhiteCover.jpg);
+}
+.canesCoverWhite {
+    background-image: url(../img/canesWhiteCover.jpg);
+}
+.flowerCoverWhite {
+    background-image: url(../img/flowerWhiteCover.jpg);
+}
+.cardsCoverWhite {
+    background-image: url(../img/hankWhiteCover.jpg);
+}
+/* Hover images */
+.sohiCoverWhite:hover {
+    background-image: url(../img/sohiCover.jpg);
+}
+.patronCoverWhite:hover {
+    background-image: url(../img/patronSaintCover.jpg);
+}
+.freedomCoverWhite:hover {
+    background-image: url(../img/freedomCover.jpg);
+}
+.ticketsCoverWhite:hover {
+    background-image: url(../img/prideCover.jpg);
+}
+.spaceCoverWhite:hover {
+    background-image: url(../img/bryzCover.jpg);
+}
+.canesCoverWhite:hover {
+    background-image: url(../img/canesCover.jpg);
+}
+.flowerCoverWhite:hover {
+    background-image: url(../img/flowerCover.jpg);
+}
+.cardsCoverWhite:hover {
+    background-image: url(../img/hankCover.jpg);
+}
+
+.modal-body img {
+    width: 100%;
+}
+
+.modal-body {
+    padding-top: 0;
+}
+
+.modal-content {
+    border: 3px solid #e00000;
+}
+
+.close {
+    margin-bottom: 6px;
+}
+
+.designCoverHold h3 {
+    margin-bottom: 30px;
+}
+
+.arrow2 {
+    position: absolute;
+    top: 190vh;
+    margin-left: 40%;
+    width: 20%;
+}
+
+.arrow2 img {
+    height: 50px;
+    width: 100%;
+}
+
+.arrowCnDD {
+    width: 30px;
+    transform: rotate(90deg);
+    position: absolute;
+    left: 5px;
+}
+.arrowCnDC {
+    width: 30px;
+    transform: rotate(270deg);
+    position: absolute;
+    right: 15px;
+}
+
+/*      About me section    */
+.redAbout {
+    z-index: 2;
+}
+    .about {
+        color: #fff;
+        font-family: 'retromark', cursive;
+        font-size: 400%;
+        width: 100%;
+        text-align: right;
+    }
+    .me {
+        color: #e00000;
+        font-family: 'retromark', cursive;
+        font-size: 400%;
+    }
+
+    .about, .me {
+        margin-top: 20px;
+    }
+    
+    .infoHold {
+        margin: 6px;
+        font-size: 90%;
+    }
+
+    .infoHold h2, .infoHold p {
+        color: #fff;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .infoHold h2 {
+        font-family: 'retromark', cursive;
+        font-size: 300%;
+        text-decoration: underline;
+    }
+
+    .picHold {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 0;
+        position: absolute;
+        right: 0%;
+    }
+
+    .myself {
+        height: auto;
+        margin: 5% 0 5%;
+        overflow: hidden;
+        z-index: 0;
+    }
+
+    .big, .oakley {
+        display: none;
+    }
+    
+    .sig {
+        width: 100%;
+        padding: 3px;
+    }
+
+
+    /*      Contact  section    */
+
+    .contact {
+        color: #fff;
+        font-family: 'retromark', cursive;
+        font-size: 400%;
+        width: 100%;
+        text-align: right;
+    }
+    .contactMe {
+        color: #e00000;
+        font-family: 'retromark', cursive;
+        font-size: 400%;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .contact {
+        margin-top: 20px;
+    }
+
+    .contactHold {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 40%;
+        margin: 20px 5%;
+        background-color: #e00000;
+        margin-bottom: 80px;
+        border-radius: 5px;
+        transition: .25s;
+        text-align: center;
+    }
+
+    .contactHold img {
+        width: 100%;
+        margin-bottom: 7px;
+    }
+
+    .contactHold h4 {
+        color: white;
+        text-decoration: none;
+    }
+    .contactMe h3 {
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 25%;
+        margin: 0;
+    }
+
+    .contactMe a:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .contactHold:hover {
+        border: solid 3px #fff;
+    }
+
+    .holdContact {
+        z-index: 2;
+        position: absolute;
+    }
+
+    .redContact {
+        min-height: 0;
+    }
+
+    /*     Check Out Section    */
+
+    .checkHold {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 40%;
+        margin: 20px 5%;
+        background-color: #fff;
+        margin-bottom: 80px;
+        border-radius: 5px;
+        transition: .25s;
+    }
+    .checkMe {
+        color: #fff;
+        font-family: 'retromark', cursive;
+        font-size: 400%;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .check {
+        color: #e00000;
+        font-family: 'retromark', cursive;
+        font-size: 400%;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .checkHold img {
+        width: 100%;
+        margin-bottom: 7px;
+        justify-content: center;
+        border-radius: 5px;
+    }
+
+    .checkHold h4 {
+        color: #e00000;
+        text-decoration: none;
+    }
+    .checkMe h3 {
+        width: 100%;
+        text-align: center;
+        color: #e00000;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 25%;
+        margin: 0;
+    }
+
+    .checkMe a:hover {
+        color: #e00000;
+        text-decoration: none;
+    }
+
+    .checkHold:hover {
+        border: solid 3px #e00000;
+    }
+
+    .whiteContact {
+        min-height: 0;
+    }
+
+
+
+
+/*       Bottom Navigation       */
+
+.bottomNav {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    transition: .25s;
+    z-index:3;
+    font-weight: 700;
+    min-height: 60px;
+}
+
+.bottomNav .redNav {
+    background-color: #e00000;
+}
+
+.redNav a:not([href]):not([tabindex]) {
+    color: #fff;
+}
+
+.whiteNav a:not([href]):not([tabindex]) {
+    color: #e00000;
+}
+
+/*    All Around Hide    */
+
+.hide {
+    display: none;
+    transition: 1s;
+}
+
+
+/*     Media Queries    */
+
+@media (min-width: 768px) {
+
+    /*    landing page    */
+    .redNav a, .whiteNav a {
+        font-size: 150%;
+    }
+
+    .welcome h1, .greetings h1 {
+        font-size: 600%;
+    }
+
+    .welcome p, .greetings p {
+        font-size: 150%;
+    }
+
+    .greetings p {
+        margin-top: -8px;
+        margin-left: 1px;
+    }
+
+    .greetings {
+        margin-left: 0;
+        padding-top: 8px;
+    }
+
+    /*     Design Section    */
+    
+    .rotateRight {
+        transform: rotate(0deg);
+    }
+    .rotateLeft {
+        transform: rotate(0deg);
+    }
+
+    .designCoverHold {
+        margin: 0 20px;
+    }
+
+    /*     Code Section   */
+
+    .siteHoldHonee, .siteHoldCover, .siteHoldBar, .siteHoldGoalie {
+        margin: 0 18px;
+    }
+
+    /*      About Section    */
+ 
+    .picHold {
+        margin-right: 10%;
+        height: 90%;
+    }
+
+    .infoHold p {
+        font-size: 150%;
+    }
+    
+    .sig {
+        width: 75%;
+        margin: 5px 12.5%;
+    }
+
+    
+    /*     Contact Section    */
+
+    .checkMe h3, .contactMe h3 {
+        font-size: 50%;
+        margin-bottom: 20px;
+    }
+
+    .checkHold h4, .contactHold h4 {
+        font-size: 80%;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .arrow, .arrow2 {
+        margin-left: 47%;
+        width: 6%;
+    }
+
+    /*      Modal    */
+
+    .modal-dialog {
+        max-width: 800px;
+    }
+
+    .close {
+        font-size: 3rem;
+    }
+
+    /*          Design And Code Sections     */
+
+    .closeRed p, .closeWhite p {
+        font-size: 150%;
+    }
+
+    .arrowCnDC, .arrowCnDD {
+        width: 60px;
+    }
+
+
+    /*    About Me     */
+    .picHold {
+        margin-right: 10%;
+        position: relative;
+    }
+
+    .sig {
+        width: 50%;
+        margin: 5px 40%;
+    }
+
+    .infoHold h2 {
+        font-size: 500%;
+    }
+
+    .big {
+        position: absolute;
+        right: 70%;
+        bottom: 3%;
+        z-index: 1;
+        height: 35%;
+        display: block;
+    }
+    
+    .oakley {
+        position: absolute;
+        right: 5%;
+        bottom: 18%;
+        z-index: 1;
+        height: 35%;
+        display: block;
+    }
+
+    /*    contact Me Section    */
+
+    .checkHold, .contactHold {
+         width: 30%;
+         margin: 10px 10% 70px;
+    }
+
+
+}
