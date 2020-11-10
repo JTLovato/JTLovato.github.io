@@ -309,7 +309,7 @@
     background-image: url(../img/bookCover.jpg);
 }
 
-.siteHoldCover, .siteHoldBar, .siteHoldHonee, .siteHoldGoalie, .siteCoverBook {
+.siteHoldCover, .siteHoldBar, .siteHoldHonee, .siteHoldGoalie, .siteHoldBook {
      text-align: center;
      color: #e00000;
      font-family: 'Open Sans', sans-serif;
