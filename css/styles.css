@@ -255,7 +255,7 @@
     margin: 5px;
 }
 
-.siteCoverHonee, .siteCoverGoalie, .siteCoverBar, .siteCoverCover {
+.siteCoverHonee, .siteCoverGoalie, .siteCoverBar, .siteCoverCover, .siteCoverBook {
     background-size: cover;
     width: 150px;
     height: 188px;
@@ -275,8 +275,11 @@
 .siteCoverCover {
     background-image: url(../img/redCoverCover.jpg);
 }
+.siteCoverBook {
+    background-image: url(../img/redBookCover.jpg);
+}
 
-.redOverlayCover, .redOverlayGoalie,  .redOverlayBar, .redOverlayHonee {
+.redOverlayCover, .redOverlayGoalie,  .redOverlayBar, .redOverlayHonee, .redOverlayBook {
     position: relative;
     top: 0;
     left: 0;
@@ -301,8 +304,12 @@
     transition: .25s;
     background-image: url(../img/coverCover.jpg);
 }
+.redOverlayBook:hover {
+    transition: .25s;
+    background-image: url(../img/bookCover.jpg);
+}
 
-.siteHoldCover, .siteHoldBar, .siteHoldHonee, .siteHoldGoalie {
+.siteHoldCover, .siteHoldBar, .siteHoldHonee, .siteHoldGoalie, .siteHoldBook {
      text-align: center;
      color: #e00000;
      font-family: 'Open Sans', sans-serif;
