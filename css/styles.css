@@ -409,6 +409,22 @@
 .cardsCoverWhite {
     background-image: url(../img/hankWhiteCover.jpg);
 }
+.jtlCoverWhite {
+    background-image: url(../img/jtlWhiteCover.jpg);
+}
+.rabbitCoverWhite {
+    background-image: url(../img/rabbitWhiteCover.jpg);
+}
+.rabbitHockeyCoverWhite {
+    background-image: url(../img/modanoWhiteCover.jpg);
+}
+.hiddenForestCoverWhite {
+    background-image: url(../img/hiddenForestWhiteCover.jpg);
+}
+.neversquareCoverWhite {
+    background-image: url(../img/neversquareWhiteCover.jpg);
+}
+
 /* Hover images */
 .sohiCoverWhite:hover {
     background-image: url(../img/sohiCover.jpg);
@@ -433,6 +449,21 @@
 }
 .cardsCoverWhite:hover {
     background-image: url(../img/hankCover.jpg);
+}
+.jtlCoverWhite:hover {
+    background-image: url(../img/jtlCover.jpg);
+}
+.rabbitCoverWhite:hover {
+    background-image: url(../img/rabbitCover.jpg);
+}
+.rabbitHockeyCoverWhite:hover {
+    background-image: url(../img/modanoCover.jpg);
+}
+.hiddenForestCoverWhite:hover {
+    background-image: url(../img/hidddenForestCover.jpg);
+}
+.neversquareCoverWhite:hover {
+    background-image: url(../img/neversquareCover.jpg);
 }
 
 .modal-body img {
@@ -517,6 +548,10 @@
         font-family: 'retromark', cursive;
         font-size: 300%;
         text-decoration: underline;
+    }
+
+    .infoHold a {
+        color: black;
     }
 
     .picHold {
